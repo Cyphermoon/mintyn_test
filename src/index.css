@@ -1,13 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base{
+  html{
+      font-size:10px
+  }
+
+  @media screen and (min-width: 640px){
+      html{
+          font-size:13px
+      }
+  }
+
+  @font-face{
+      font-family: "Roboto";
+      font-weight:400;
+      src: url("./fonts/roboto/Roboto-Regular.ttf");
+  }
+
+  @font-face{
+      font-family: "Roboto";
+      font-weight:500;
+      src: url("./fonts/roboto/Roboto-Medium.ttf");
+  }
+
+  @font-face{
+      font-family: "Roboto";
+      font-weight:700;
+      src: url("./fonts/roboto/Roboto-Bold.ttf");
+  }
+
 }
+
+@layer base{
+    h1{
+        @apply text-headline;
+        font-weight:700;
+        text-transform: capitalize;
+        font-family: "Roboto sans-serif"
+    }
+
+    h2{
+        @apply text-title_bg;
+        font-weight:500;
+        text-transform:capitalize;
+    }
+
+    h3{
+        @apply text-title_md;
+        font-weight:500;
+    }
+
+    h4{
+        @apply text-title_sm;
+        font-weight:800;
+    }
+}
+
+
+
