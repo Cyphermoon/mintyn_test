@@ -2,6 +2,7 @@ import React from "react"
 
 export type searchBarType = {
     placeholder: string
+    outline?: boolean
 }
 
 export type summaryItemType = {
@@ -15,6 +16,11 @@ export type transactionDataType = {
     field?: "status" | "itemType" | "default",
     color?: string,
     className?: string
+}
+
+export type navButtonType = {
+    text: string,
+    active?: true
 }
 
 export type transactionListType = {
