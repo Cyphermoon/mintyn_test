@@ -4,7 +4,7 @@ import SearchBar from './SearchBar'
 
 
 const ListItem = ({ children, className }: listItemType) => {
-    return <li className={`${className ? className : ""} text-title_md text-gray-700`}>
+    return <li className={`${className ? className : ""} text-title_md text-gray-500`}>
         {children}
     </li>
 }
@@ -21,8 +21,9 @@ const Nav = () => {
                 <ListItem>
                     <a href="/" title='Frequent Asked Question'>FAQ</a>
                 </ListItem>
-                <ListItem>
-                    <small>3</small>
+                <ListItem className='relative'>
+                    <small className='absolute -top-3 -right-2 flex justify-center items-center rounded-full w-5 h-5 text-title_sm text-white bg-primary'>3</small>
+                    <img src='/icons/bell-53.svg' alt='Bell icon' />
                 </ListItem>
                 <ListItem className='flex'>
                     <div className='flex flex-col mr-3 items-end'>
