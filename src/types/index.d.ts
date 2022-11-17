@@ -4,6 +4,17 @@ export type searchBarType = {
     placeholder: string
 }
 
+export type summaryItemType = {
+    text: string,
+    value: number,
+    color: string
+}
+
+export type InfoSummaryType = {
+    headerText: string,
+    children: React.ReactNode
+}
+
 export type infoDisplayType = {
     name: string,
     value: string
