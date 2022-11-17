@@ -4,6 +4,11 @@ export type searchBarType = {
     placeholder: string
 }
 
+export type infoDisplayType = {
+    name: string,
+    value: string
+}
+
 export type sideBarOptionsType = {
     headerText: string,
     children: React.ReactNode,

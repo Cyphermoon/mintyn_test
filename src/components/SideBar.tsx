@@ -3,8 +3,8 @@ import SideBarOptions, { SideBarOption } from './SideBarOptions'
 
 const SideBar = () => {
     return (
-        <section className='w-80 bg-white h-screen py-10 text-left px-8 space-y-8'>
-            <button className='font-sans text-white font-semibold text-title_sm uppercase bg-secondary rounded-full px-8 py-3'>Generate Invoice</button>
+        <section className='w-1/6 bg-white h-screen py-10 text-left px-8 space-y-8'>
+            <button className='font-sans text-white font-semibold text-title_sm uppercase bg-secondary rounded-full px-9 py-3'>Generate Invoice</button>
 
             <SideBarOptions headerText="Main">
                 <SideBarOption active={true} iconURL='/icons/Vector.svg' text='Overview' />
