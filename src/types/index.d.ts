@@ -10,6 +10,26 @@ export type summaryItemType = {
     color: string
 }
 
+export type transactionDataType = {
+    text: string
+    field?: string
+    color?: string
+}
+
+export type transactionListType = {
+    transactionDatas: {
+        itemType: string,
+        price: string,
+        transactionNo: string,
+        time: string, 
+        status: string
+    }[]
+}
+
+export type tableHeaderType = {
+    text: string
+}
+
 export type InfoSummaryType = {
     headerText: string,
     children: React.ReactNode

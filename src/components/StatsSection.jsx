@@ -1,6 +1,7 @@
 import React from 'react'
 import InfoDisplay from './InfoDisplay'
 import InfoSummary, { SummaryItem } from './InfoSummary'
+import PaymentTransactionSection from './PaymentTransactionSection'
 
 const StatsSection = () => {
   return (
@@ -17,14 +18,16 @@ const StatsSection = () => {
                 <SummaryItem text="Pending Orders" value="20" color="text-accent"/>
                 <SummaryItem text="Reconciled Orders" value="80" color="text-secondary"/>
                 <SummaryItem text="Total Payment" value="80" color="text-primary"/>
-        </InfoSummary>
+            </InfoSummary>
 
-        <InfoSummary headerText={"Payments"}>
-            <SummaryItem text="Un-reconciled Payments" value="20" color="text-accent"/>
-            <SummaryItem text="Reconciled Orders" value="80" color="text-secondary"/>
-            <SummaryItem text="Total Payment" value="80" color="text-primary"/>
-        </InfoSummary>
+            <InfoSummary headerText={"Payments"}>
+                <SummaryItem text="Un-reconciled Payments" value="20" color="text-accent"/>
+                <SummaryItem text="Reconciled Orders" value="80" color="text-secondary"/>
+                <SummaryItem text="Total Payment" value="80" color="text-primary"/>
+            </InfoSummary>
         </div>
+
+        <PaymentTransactionSection />
         
     </section>
   )
