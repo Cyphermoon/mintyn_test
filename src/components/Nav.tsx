@@ -11,10 +11,10 @@ const ListItem = ({ children, className }: listItemType) => {
 
 const Nav = () => {
     return (
-        <nav className='flex justify-between items-center'>
-            <h1>TransMonitor</h1>
+        <nav className='flex justify-between items-center bg-white drop-shadow-2xl py-3 px-5'>
+            <h1 className='text-primary'>TransMonitor</h1>
             <SearchBar placeholder='Search...' />
-            <ul className='flex justify-between max-w-sm'>
+            <ul className='flex justify-between w-11/12 max-w-sm'>
                 <ListItem>
                     <a href='/'>Support</a>
                 </ListItem>
@@ -24,8 +24,8 @@ const Nav = () => {
                 <ListItem>
                     <small>3</small>
                 </ListItem>
-                <ListItem>
-                    <div>
+                <ListItem className='flex'>
+                    <div className='flex flex-col'>
                         <small>Hello</small>
                         <p>Oluwaleke Ojo</p>
                     </div>
