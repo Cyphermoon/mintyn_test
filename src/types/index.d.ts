@@ -11,9 +11,10 @@ export type summaryItemType = {
 }
 
 export type transactionDataType = {
-    text: string
-    field?: string
-    color?: string
+    text: string,
+    field?: "status" | "itemType" | "default",
+    color?: string,
+    className?: string
 }
 
 export type transactionListType = {
@@ -23,11 +24,13 @@ export type transactionListType = {
         transactionNo: string,
         time: string, 
         status: string
+        color: string
     }[]
 }
 
 export type tableHeaderType = {
     text: string
+    className?: string
 }
 
 export type InfoSummaryType = {

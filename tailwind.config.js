@@ -9,8 +9,8 @@ module.exports = {
         primary: "#1875F0",
         secondary: "#27AE60",
         accent: "#FDC203",
-        background: "#E5E5E5"
-
+        background: "#E5E5E5",
+        lightgray: "#CCCFD4"
       }
     },
     fontFamily: {

@@ -1,10 +1,11 @@
 import React from 'react'
 import { tableHeaderType } from '../types'
 import { TransactionList } from './TransactionList'
+import datas from "../transaction_list.json"
 
-const TableHeader = ({ text }: tableHeaderType) => {
+const TableHeader = ({ text, className }: tableHeaderType) => {
     return (
-        <th className='text-left text-title_md py-4 text-gray-500 font-medium'>{text}</th>
+        <th className={`${className && className} text-left text-title_md py-4 text-gray-600 font-medium`}>{text}</th>
     )
 }
 
@@ -13,9 +14,9 @@ const PaymentTransactionSection = () => {
         <section className=''>
             <h2>Payments</h2>
             <table className='w-full'>
-                <thead>
-                    <tr className="bg-gray-200">
-                        <TableHeader text={"Item Type"} />
+                <thead >
+                    <tr className="bg-gray-300">
+                        <TableHeader text={"Item Type"} className={"pl-6"} />
                         <TableHeader text={"Item Price"} />
                         <TableHeader text={"Transaction No"} />
                         <TableHeader text={"Status"} />
@@ -23,7 +24,7 @@ const PaymentTransactionSection = () => {
                 </thead>
 
                 <tbody className='bg-white'>
-                    <TransactionList />
+                    <TransactionList transactionDatas={datas} />
                 </tbody>
 
 
