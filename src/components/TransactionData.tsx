@@ -1,5 +1,5 @@
 import { transactionDataType } from "../types"
-
+import React from "react"
 export const TransactionData = ({ text, field, color, className }: transactionDataType) => {
     return (
         <>
@@ -7,7 +7,7 @@ export const TransactionData = ({ text, field, color, className }: transactionDa
 
             {field === "status" &&
                 <td className={`flex justify-between`}>
-                    <div className='flex w-[40%] justify-between my-3 p-3 border border-gray-300 rounded-full'>
+                    <div className='flex w-[40%] justify-between my-3 p-3 border border-gray-300  rounded-full'>
                         <div className={`rounded-full w-5 h-5 text-title_sm  bg-${color}`} />
                         <span className={`text-label_md w-9/12 text-gray-500 text-${color}`}>{text}</span>
                     </div>

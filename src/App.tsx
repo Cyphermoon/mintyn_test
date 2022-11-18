@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import SideBar from "./components/SideBar";
 import StatsSection from "./components/StatsSection";
+import React from "react"
 
 function App() {
   return (
