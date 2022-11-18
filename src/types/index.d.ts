@@ -5,6 +5,10 @@ export type searchBarType = {
     outline?: boolean
 }
 
+export type paymentSectionOptionType = {
+    value: string
+}
+
 export type dateStateButtonType = {
     iconURL: string,
     altText: string
@@ -12,7 +16,7 @@ export type dateStateButtonType = {
 
 export type summaryItemType = {
     text: string,
-    value: number,
+    value: string,
     color: string
 }
 

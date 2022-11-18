@@ -1,7 +1,5 @@
 import { transactionListType } from "../types"
 import { TransactionData } from "./TransactionData"
-import React from "react"
-
 
 
 export const TransactionList = ({ transactionDatas }: transactionListType) => {

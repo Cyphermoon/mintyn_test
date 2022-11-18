@@ -1,9 +1,9 @@
-import React from 'react'
 import { tableHeaderType } from '../types'
 import { TransactionList } from './TransactionList'
 import datas from "../transaction_list.json"
 import NavButton from './NavButton'
 import SearchBar from './SearchBar'
+import PaymentSectionDropDownList from './PaymentSectionDropDownList'
 
 const TableHeader = ({ text, className }: tableHeaderType) => {
     return (
@@ -28,15 +28,9 @@ const PaymentTransactionSection = () => {
 
                 <SearchBar placeholder='Search payment' outline={true} />
 
-                <select className='bg-transparent border border-gray-300 p-2 rounded-md' name="option" id="">
-                    <option value="all">All</option>
-                    <option value="reconciled">Reconciled</option>
-                    <option value="un-reconciled">Un-reconciled</option>
-                    <option value="settlement">Settlement</option>
-                    <option value="un-settlement">Unsettled</option>
-                </select>
-
+                <PaymentSectionDropDownList />
             </div>
+
             <table className='w-full'>
                 <thead >
                     <tr className="bg-lightgray">
@@ -51,6 +45,7 @@ const PaymentTransactionSection = () => {
                     <TransactionList transactionDatas={datas} />
                 </tbody>
             </table>
+
             <div className='flex justify-between'>
                 <p className='text-label_md text-gray-700'>Showing 1 to 10 of 500 entries</p>
                 <div>

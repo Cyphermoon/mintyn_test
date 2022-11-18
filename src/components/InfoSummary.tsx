@@ -1,4 +1,3 @@
-import React from 'react'
 import { InfoSummaryType, summaryItemType } from '../types'
 
 export const SummaryItem = ({ text, value, color }: summaryItemType) => {
