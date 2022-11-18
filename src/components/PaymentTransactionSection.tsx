@@ -19,10 +19,10 @@ const PaymentTransactionSection = () => {
             <div className='flex justify-between items-center'>
                 <p className='text-label_sm text-gray-500'>
                     <span>Showing </span>
-                    <div className='text-primary inline-flex items-center'>
+                    <span className='text-primary inline-flex items-center'>
                         <span>20</span>
                         <img className='w-6 h-6' style={{ filter: "invert(46%) sepia(92%) saturate(4172%) hue-rotate(202deg) brightness(94%) contrast(100%)" }} src="/icons/arrow.svg" alt="Arrow Down Icon" />
-                    </div>
+                    </span>
                     <span>out of 500 payments</span>
                 </p>
 
