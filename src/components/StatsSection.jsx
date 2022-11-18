@@ -17,7 +17,7 @@ const StatsSection = () => {
         <section className='flex'>
          <DateStats />
 
-            <div className='space-y-2 w-3/12'>
+            <div className='space-y-3 w-[28%]'>
                 <InfoSummary headerText={"Orders"}>
                     <SummaryItem text="Pending Orders" value="20" color="text-accent"/>
                     <SummaryItem text="Reconciled Orders" value="80" color="text-secondary"/>

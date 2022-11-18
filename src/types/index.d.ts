@@ -5,6 +5,11 @@ export type searchBarType = {
     outline?: boolean
 }
 
+export type dateStateButtonType = {
+    iconURL: string,
+    altText: string
+}
+
 export type summaryItemType = {
     text: string,
     value: number,

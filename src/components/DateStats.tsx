@@ -89,7 +89,7 @@ const data = [
 
 const DateStats = () => {
     return (
-        <div className='bg-white p-2 flex-grow mr-4'>
+        <div className='bg-white p-2 flex-grow mr-2'>
             <DateStateHeader />
             <ResponsiveContainer width="100%" height="90%">
                 <AreaChart

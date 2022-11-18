@@ -1,3 +1,15 @@
+import { dateStateButtonType } from "../types"
+
+const DateStateNavButton = ({ iconURL, altText }: dateStateButtonType) => {
+    return (
+        <button className='border border-slate-200 rounded-sm'>
+            <img src={iconURL}
+                alt={altText}
+                style={{ filter: "brightness(0) saturate(100%) invert(85%) sepia(1%) saturate(829%) hue-rotate(320deg) brightness(91%) contrast(100%)" }} />
+        </button>
+    )
+}
+
 const DateStateHeader = () => {
     return (
         <div className='flex justify-between items-center'>
@@ -13,17 +25,9 @@ const DateStateHeader = () => {
 
                 </div>
                 <div >
-                    <button className='bg-stone-100 border border-gray-200 rounded-sm p-1'>
-                        <img src="/icons/arrow_left.png"
-                            alt="Arrow Left icon"
-                            style={{ filter: "brightness(0) saturate(100%) invert(85%) sepia(1%) saturate(829%) hue-rotate(320deg) brightness(91%) contrast(100%)" }} />
-                    </button>
-                    <button className='bg-stone-100 border border-gray-200 rounded-sm p-1'>
-                        <img
-                            src="/icons/arrow_right.png"
-                            alt="Arrow Right icon"
-                            style={{ filter: "brightness(0) saturate(100%) invert(85%) sepia(1%) saturate(829%) hue-rotate(320deg) brightness(91%) contrast(100%)" }} />
-                    </button>
+                    <DateStateNavButton iconURL="/icons/arrow_left.png" altText="Arrow Left Icon" />
+                    <DateStateNavButton iconURL="/icons/arrow_right.png" altText="Arrow Right Icon" />
+
                 </div>
             </div>
         </div>
