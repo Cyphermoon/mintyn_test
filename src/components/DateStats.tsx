@@ -124,7 +124,7 @@ const DateStats = () => {
                     <ReferenceLine x="May" stroke="blue" label="May" />
                     <ReferenceLine x="Jun" stroke="blue" label="Jun" />
 
-                    <Area type="monotone" dataKey="uv" />
+                    <Area type="monotone" dataKey="uv" stroke="#0294FF" fill="#0294FF" />
                 </AreaChart>
             </ResponsiveContainer>
         </div>
