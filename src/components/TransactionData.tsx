@@ -1,5 +1,4 @@
 import { transactionDataType } from "../types"
-import React from "react"
 export const TransactionData = ({ text, field, color, className }: transactionDataType) => {
     return (
         <>
