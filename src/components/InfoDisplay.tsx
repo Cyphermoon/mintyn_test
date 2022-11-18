@@ -31,12 +31,12 @@ const data = [
 
 const InfoDisplay = ({ name, value }: infoDisplayType) => {
     return (
-        <div className='bg-white p-3 rounded-sm flex items-center'>
+        <div className='bg-white w-[20%]  p-3 rounded-sm flex items-center'>
             <div className='flex flex-col justify-start mr-1'>
                 <p className='text-title-md text-gray-500'>{name}</p>
                 <h3>{value}</h3>
             </div>
-            <ResponsiveContainer width="30%" height="90%">
+            <ResponsiveContainer width="35%" height="90%">
                 <AreaChart
                     width={500}
                     height={400}

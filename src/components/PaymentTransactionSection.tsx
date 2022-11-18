@@ -7,7 +7,7 @@ import SearchBar from './SearchBar'
 
 const TableHeader = ({ text, className }: tableHeaderType) => {
     return (
-        <th className={`${className && className} text-left text-title_md py-4 text-gray-700 font-medium`}>{text}</th>
+        <th className={`${className && className} text-left text-title_md py-4 text-gray-600 font-medium`}>{text}</th>
     )
 }
 
@@ -17,7 +17,7 @@ const PaymentTransactionSection = () => {
         <section className='space-y-8'>
             <h2>Payments</h2>
             <div className='flex justify-between items-center'>
-                <p className='text-label_sm text-gray-500'>
+                <p className='text-label_md text-gray-500'>
                     <span>Showing </span>
                     <span className='text-primary inline-flex items-center'>
                         <span>20</span>
@@ -28,7 +28,7 @@ const PaymentTransactionSection = () => {
 
                 <SearchBar placeholder='Search payment' outline={true} />
 
-                <select className='bg-transparent' name="option" id="">
+                <select className='bg-transparent border border-gray-300 p-2 rounded-md' name="option" id="">
                     <option value="all">All</option>
                     <option value="reconciled">Reconciled</option>
                     <option value="un-reconciled">Un-reconciled</option>
@@ -39,7 +39,7 @@ const PaymentTransactionSection = () => {
             </div>
             <table className='w-full'>
                 <thead >
-                    <tr className="bg-gray-300">
+                    <tr className="bg-lightgray">
                         <TableHeader text={"Item Type"} className={"pl-6"} />
                         <TableHeader text={"Item Price"} />
                         <TableHeader text={"Transaction No"} />
@@ -52,7 +52,7 @@ const PaymentTransactionSection = () => {
                 </tbody>
             </table>
             <div className='flex justify-between'>
-                <p className='text-label_md'>Showing 1 to 10 of 500 entries</p>
+                <p className='text-label_md text-gray-700'>Showing 1 to 10 of 500 entries</p>
                 <div>
                     <NavButton text="Previous" />
                     <NavButton text="1" active={true} />

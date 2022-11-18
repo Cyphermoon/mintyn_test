@@ -21,13 +21,13 @@ const StatsSection = () => {
                 <InfoSummary headerText={"Orders"}>
                     <SummaryItem text="Pending Orders" value="20" color="text-accent"/>
                     <SummaryItem text="Reconciled Orders" value="80" color="text-secondary"/>
-                    <SummaryItem text="Total Payment" value="80" color="text-primary"/>
+                    <SummaryItem text="Total Payment" value="100" color="text-primary"/>
                 </InfoSummary>
 
                 <InfoSummary headerText={"Payments"}>
                     <SummaryItem text="Un-reconciled Payments" value="20" color="text-accent"/>
                     <SummaryItem text="Reconciled Orders" value="80" color="text-secondary"/>
-                    <SummaryItem text="Total Payment" value="80" color="text-primary"/>
+                    <SummaryItem text="Total Payment" value="100" color="text-primary"/>
                 </InfoSummary>
             </div>
 

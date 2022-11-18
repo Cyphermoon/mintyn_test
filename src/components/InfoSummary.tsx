@@ -4,8 +4,8 @@ import { InfoSummaryType, summaryItemType } from '../types'
 export const SummaryItem = ({ text, value, color }: summaryItemType) => {
     return (
         <div className='flex'>
-            <p className='text-title_md mr-1'>{text}:</p>
-            <p className={`${color}`}>{value}</p>
+            <p className='text-label_bg mr-1'>{text}:</p>
+            <p className={`${color} font-semibold`}>{value}</p>
         </div>
     )
 }
