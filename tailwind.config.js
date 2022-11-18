@@ -10,7 +10,8 @@ module.exports = {
         secondary: "#27AE60",
         accent: "#FDC203",
         background: "#F7F8FA",
-        lightgray: "#CCCFD4"
+        lightgray: "#EAEEF0",
+        tablebackground: "#CCCFD4"
       }
     },
     fontFamily: {

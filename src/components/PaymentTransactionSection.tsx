@@ -14,7 +14,7 @@ const TableHeader = ({ text, className }: tableHeaderType) => {
 
 const PaymentTransactionSection = () => {
     return (
-        <section className='space-y-8'>
+        <section className='space-y-6'>
             <h2>Payments</h2>
             <div className='flex justify-between items-center'>
                 <p className='text-label_md text-gray-500'>
