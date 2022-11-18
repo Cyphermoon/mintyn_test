@@ -30,7 +30,7 @@ const Nav = () => {
                         <small>Hello</small>
                         <p>Oluwaleke Ojo</p>
                     </div>
-                    <img className='rounded-full w-10 h-10' src="https://via.placeholder.com/30" alt="User Profile" />
+                    <img className='rounded-full w-10 h-10' src="/icons/profile_picture.png" alt="User Profile" />
                 </ListItem>
             </ul>
         </nav>

@@ -17,7 +17,7 @@ const data = [
     },
     {
         name: 'March',
-        uv: 800,
+        uv: 3000,
         pv: 9800,
         amt: 2290,
     },
@@ -87,7 +87,6 @@ const data = [
 ];
 
 
-
 const DateStats = () => {
     return (
         <div className='bg-white p-2 flex-grow mr-4'>
@@ -105,6 +104,16 @@ const DateStats = () => {
                     }}
                 >
                     <CartesianGrid strokeDasharray="3 3" />
+                    <defs>
+                        <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
+                            <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+                        </linearGradient>
+                        <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
+                            <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+                        </linearGradient>
+                    </defs>
                     <XAxis dataKey="name" hide={true} />
                     <YAxis hide={true} />
                     <Tooltip />
@@ -115,7 +124,7 @@ const DateStats = () => {
                     <ReferenceLine x="May" stroke="blue" label="May" />
                     <ReferenceLine x="Jun" stroke="blue" label="Jun" />
 
-                    <Area type="monotone" dataKey="uv" stroke="#0294FF" fill="#0294FF" />
+                    <Area type="monotone" dataKey="uv" />
                 </AreaChart>
             </ResponsiveContainer>
         </div>
