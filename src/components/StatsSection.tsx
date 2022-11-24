@@ -14,7 +14,7 @@ const StatsSection = () => {
                 <InfoDisplay name="Total Transaction Value" value={"₦4,000,000"} />
             </div>
 
-            <section className='grid md:grid-cols-12 md:gap-2 md:grid-rows-2'>
+            <section className='grid md:grid-cols-12 md:gap-4 md:grid-rows-2'>
                 <DateStats />
 
                 <InfoSummary headerText={"Orders"}>

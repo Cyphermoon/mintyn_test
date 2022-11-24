@@ -1,6 +1,6 @@
 import React from 'react'
 import { infoDisplayType } from '../types'
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 const data = [
     {
@@ -46,10 +46,10 @@ const InfoDisplay = ({ name, value }: infoDisplayType) => {
                         bottom: 0,
                     }}
                 >
-                    <CartesianGrid strokeDasharray="3 3" />
+                    <CartesianGrid horizontal={false} vertical={false} strokeDasharray="3 3" />
                     <XAxis dataKey="name" hide={true} />
                     <YAxis hide={true} />
-                    <Tooltip />
+
                     <Area type="monotone" dataKey="uv" stroke="#0294FF" fill="#7BD2FF" />
                 </AreaChart>
             </ResponsiveContainer>

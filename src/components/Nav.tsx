@@ -11,7 +11,7 @@ const ListItem = ({ children, className }: listItemType) => {
 
 const Nav = () => {
     return (
-        <nav className='w-screen flex justify-between items-center bg-white drop-shadow-lg py-3 px-8'>
+        <nav className='w-screen flex justify-between items-center bg-white drop-shadow-md py-3 px-8'>
             <h1 className='text-primary'>TransMonitor</h1>
             <SearchBar placeholder='Search...' />
             <ul className='flex justify-between items-center w-11/12 max-w-sm'>
