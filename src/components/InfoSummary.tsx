@@ -3,7 +3,7 @@ import { InfoSummaryType, summaryItemType } from '../types'
 export const SummaryItem = ({ text, value, color }: summaryItemType) => {
     return (
         <div className='flex'>
-            <p className='text-label_bg text-gray-500 mr-1'>{text}:</p>
+            <p className='text-[0.95rem] text-gray-700 mr-1 font-medium'>{text}:</p>
             <p className={`${color} font-semibold`}>{value}</p>
         </div>
     )
@@ -11,9 +11,9 @@ export const SummaryItem = ({ text, value, color }: summaryItemType) => {
 
 const InfoSummary = ({ headerText, children }: InfoSummaryType) => {
     return (
-        <section className='space-y-3 bg-white p-3'>
-            <h4 className='text-gray-600'>{headerText}</h4>
-            <div className='h-1 w-full flex'>
+        <section className='space-y-3 bg-white p-3 col-start-9 col-end-13 row-span-1'>
+            <h4 className='text-title_md text-gray-600'>{headerText}</h4>
+            <div className='h-[5px] w-full flex'>
                 <div className='w-5/6 h-full bg-secondary' />
                 <div className='w-1/6 h-full bg-accent' />
             </div>

@@ -89,12 +89,12 @@ const data = [
 
 const DateStats = () => {
     return (
-        <div className='bg-white p-2 flex-grow mr-2'>
+        <div className='bg-white col-start-1 col-end-9 row-span-full p-2'>
             <DateStateHeader />
-            <ResponsiveContainer width="100%" height="90%">
+            <ResponsiveContainer width="100%" height="89%">
                 <AreaChart
                     width={300}
-                    height={400}
+                    height={200}
                     data={data}
                     margin={{
                         top: 40,
@@ -124,7 +124,7 @@ const DateStats = () => {
                     <ReferenceLine x="May" stroke="blue" label="May" />
                     <ReferenceLine x="Jun" stroke="blue" label="Jun" />
 
-                    <Area type="monotone" dataKey="uv" stroke="#0294FF" fill="#0294FF" />
+                    <Area type="monotone" dataKey="uv" stroke="#0294FF" fill="#7BD2FF" />
                 </AreaChart>
             </ResponsiveContainer>
         </div>

@@ -31,15 +31,13 @@ const data = [
 
 const InfoDisplay = ({ name, value }: infoDisplayType) => {
     return (
-        <div className='bg-white w-[20%] p-3 rounded-sm flex items-center'>
-            <div className='flex flex-col justify-start mr-1'>
-                <p className='text-title-md text-gray-500'>{name}</p>
-                <h3>{value}</h3>
+        <div className='bg-white w-[24%] px-4 py-4 rounded-sm flex items-center'>
+            <div className='flex flex-col justify-start flex-grow'>
+                <p className='text-label_md text-gray-500'>{name}</p>
+                <h3 className='text-[1.25rem] text-gray-900'>{value}</h3>
             </div>
-            <ResponsiveContainer width="35%" height="90%">
+            <ResponsiveContainer width="41%" height="100%">
                 <AreaChart
-                    width={500}
-                    height={400}
                     data={data}
                     margin={{
                         top: 10,
@@ -52,7 +50,7 @@ const InfoDisplay = ({ name, value }: infoDisplayType) => {
                     <XAxis dataKey="name" hide={true} />
                     <YAxis hide={true} />
                     <Tooltip />
-                    <Area type="monotone" dataKey="uv" stroke="#0294FF" fill="#0294FF" />
+                    <Area type="monotone" dataKey="uv" stroke="#0294FF" fill="#7BD2FF" />
                 </AreaChart>
             </ResponsiveContainer>
         </div>

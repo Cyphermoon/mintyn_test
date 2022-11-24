@@ -5,38 +5,36 @@ import InfoSummary, { SummaryItem } from './InfoSummary'
 import PaymentTransactionSection from './PaymentTransactionSection'
 
 const StatsSection = () => {
-  return (
-    <section className='flex-grow px-5 py-5 space-y-10'>
-        <div className='flex justify-between'>
-            <InfoDisplay name="Daily Transaction Volume" value={"2,342"} />
-            <InfoDisplay name="Daily Transaction Value" value={"₦4,000,000"} />
-            <InfoDisplay name="Total Transaction Volume" value={"452,000"} />
-            <InfoDisplay name="Total Transaction Value" value={"₦4,000,000"} />
-        </div>
+    return (
+        <section className='flex-grow p-12 space-y-10'>
+            <div className='flex justify-between'>
+                <InfoDisplay name="Daily Transaction Volume" value={"2,342"} />
+                <InfoDisplay name="Daily Transaction Value" value={"₦4,000,000"} />
+                <InfoDisplay name="Total Transaction Volume" value={"452,000"} />
+                <InfoDisplay name="Total Transaction Value" value={"₦4,000,000"} />
+            </div>
 
-        <section className='flex'>
-         <DateStats />
+            <section className='grid md:grid-cols-12 md:gap-2 md:grid-rows-2'>
+                <DateStats />
 
-            <div className='space-y-3 w-[28%]'>
                 <InfoSummary headerText={"Orders"}>
-                    <SummaryItem text="Pending Orders" value="20" color="text-accent"/>
-                    <SummaryItem text="Reconciled Orders" value="80" color="text-secondary"/>
-                    <SummaryItem text="Total Payment" value="100" color="text-primary"/>
+                    <SummaryItem text="Pending Orders" value="20" color="text-accent" />
+                    <SummaryItem text="Reconciled Orders" value="80" color="text-secondary" />
+                    <SummaryItem text="Total Payment" value="100" color="text-primary" />
                 </InfoSummary>
 
                 <InfoSummary headerText={"Payments"}>
-                    <SummaryItem text="Un-reconciled Payments" value="20" color="text-accent"/>
-                    <SummaryItem text="Reconciled Orders" value="80" color="text-secondary"/>
-                    <SummaryItem text="Total Payment" value="100" color="text-primary"/>
+                    <SummaryItem text="Un-reconciled Payments" value="20" color="text-accent" />
+                    <SummaryItem text="Reconciled Orders" value="80" color="text-secondary" />
+                    <SummaryItem text="Total Payment" value="100" color="text-primary" />
                 </InfoSummary>
-            </div>
+
+            </section>
+
+            <PaymentTransactionSection />
 
         </section>
-
-        <PaymentTransactionSection />
-        
-    </section>
-  )
+    )
 }
 
 export default StatsSection
