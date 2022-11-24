@@ -19,7 +19,7 @@ module.exports = {
     },
     fontSize: {
       base: ["1rem", "1.5"],
-      headline: ["1.5rem", "1.2"],
+      headline: ["1.8rem", "1.2"],
       label_bg: ["0.875rem", "1.5"],
       label_md: ["0.8125rem", "1.5"],
       label_sm: ["0.6875rem", "1.5"],

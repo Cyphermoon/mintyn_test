@@ -45,7 +45,7 @@ body {
         @apply text-headline;
         font-weight:800;
         text-transform: capitalize;
-        font-family: "Roboto sans-serif"
+        font-family: "Roboto"
     }
 
     a{

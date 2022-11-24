@@ -4,7 +4,7 @@ import SearchBar from './SearchBar'
 
 
 const ListItem = ({ children, className }: listItemType) => {
-    return <li className={`${className ? className : ""} text-label_bg text-gray-500`}>
+    return <li className={`${className ? className : ""} text-[0.95rem] text-gray-500`}>
         {children}
     </li>
 }
@@ -12,9 +12,9 @@ const ListItem = ({ children, className }: listItemType) => {
 const Nav = () => {
     return (
         <nav className='w-screen flex justify-between items-center bg-white drop-shadow-md py-3 px-8'>
-            <h1 className='text-primary'>TransMonitor</h1>
+            <h1 className='text-primary font-bold'>TransMonitor</h1>
             <SearchBar placeholder='Search...' />
-            <ul className='flex justify-between items-center w-11/12 max-w-sm'>
+            <ul className='flex justify-between items-center w-11/12 max-w-md'>
                 <ListItem>
                     <a href='/'>Support</a>
                 </ListItem>

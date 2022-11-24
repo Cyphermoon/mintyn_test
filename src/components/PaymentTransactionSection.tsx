@@ -17,7 +17,7 @@ const PaymentTransactionSection = () => {
         <section className='space-y-6'>
             <h2>Payments</h2>
             <div className='flex justify-between items-center'>
-                <p className='text-label_md text-gray-500'>
+                <p className='text-label_bg text-gray-500'>
                     <span>Showing </span>
                     <span className='text-primary inline-flex items-center'>
                         <span>20</span>
