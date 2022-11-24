@@ -10,15 +10,12 @@ body {
 }
 
 @layer base{
-  html{
-      font-size:10px
-  }
 
-  @media screen and (min-width: 640px){
-      html{
-          font-size:13px
-      }
-  }
+
+    html{
+        font-size:13px
+    }
+
 
   @font-face{
       font-family: "Roboto";

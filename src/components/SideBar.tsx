@@ -1,9 +1,12 @@
 import React from 'react'
+import { useThemeContext } from '../context/ThemeProvider'
 import SideBarOptions, { SideBarOption } from './SideBarOptions'
 
 const SideBar = () => {
+    const { navOpened } = useThemeContext()
+
     return (
-        <section className='w-[17%] bg-white h-screen py-10 text-left px-8 space-y-8'>
+        <section className={`${navOpened ? "absolute w-full z-30 left-0 top-20 block" : "w-[17%] hidden"} bg-white h-screen py-10  text-left px-8 space-y-8 md:block`}>
             <button className='font-sans text-white font-semibold text-title_sm uppercase bg-secondary rounded-full px-9 py-3'>Generate Invoice</button>
 
             <SideBarOptions headerText="Main">
