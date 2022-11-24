@@ -3,6 +3,7 @@ import React from "react"
 export type searchBarType = {
     placeholder: string
     outline?: boolean
+    navOpened?: boolean
 }
 
 export type paymentSectionOptionType = {

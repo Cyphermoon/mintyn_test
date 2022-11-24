@@ -1,4 +1,4 @@
-import React from 'react'
+import { useThemeContext } from '../context/ThemeProvider'
 import { listItemType } from '../types'
 import SearchBar from './SearchBar'
 
@@ -10,11 +10,13 @@ const ListItem = ({ children, className }: listItemType) => {
 }
 
 const Nav = () => {
+    const { toggleNavOpened, navOpened } = useThemeContext()
+
     return (
         <nav className='w-screen flex justify-between items-center bg-white drop-shadow-md py-3 px-8'>
             <h1 className='text-primary font-bold'>TransMonitor</h1>
             <SearchBar placeholder='Search...' />
-            <ul className='flex justify-between items-center w-11/12 max-w-md'>
+            <ul className={`md:flex hidden justify-between items-center w-11/12 max-w-md`}>
                 <ListItem>
                     <a href='/'>Support</a>
                 </ListItem>
@@ -33,6 +35,11 @@ const Nav = () => {
                     <img className='rounded-full w-10 h-10' src="/icons/profile_picture.png" alt="User Profile" />
                 </ListItem>
             </ul>
+            <figure
+                className='w-11 h-11 block md:hidden'
+                onClick={() => toggleNavOpened(!navOpened)}>
+                <img className='w-full h-auto inline-block ' src="/icons/hamburger__icon.svg" alt="hamburger icon" />
+            </figure>
         </nav>
     )
 }
