@@ -36,25 +36,28 @@ const InfoDisplay = ({ name, value }: infoDisplayType) => {
                 <p className='text-label_md text-gray-500'>{name}</p>
                 <h3 className='text-[1.25rem] text-gray-900'>{value}</h3>
             </div>
-            <ResponsiveContainer className={"self-start"} width="41%" height="95%">
-                <AreaChart
-                    width={100}
-                    height={200}
-                    data={data}
-                    margin={{
-                        top: 10,
-                        right: 30,
-                        left: 0,
-                        bottom: 0,
-                    }}
-                >
-                    <CartesianGrid width={100} horizontal={false} vertical={false} strokeDasharray="3 3" />
-                    <XAxis dataKey="name" hide={true} />
-                    <YAxis hide={true} />
+            <div className='w-[41%] h-[7vh] md:h-[95%]'>
+                <ResponsiveContainer className={"self-start"} width="100%" height="100%">
+                    <AreaChart
+                        width={100}
+                        height={200}
+                        data={data}
+                        margin={{
+                            top: 10,
+                            right: 30,
+                            left: 0,
+                            bottom: 0,
+                        }}
+                    >
+                        <CartesianGrid width={100} horizontal={false} vertical={false} strokeDasharray="3 3" />
+                        <XAxis dataKey="name" hide={true} />
+                        <YAxis hide={true} />
 
-                    <Area type="monotone" dataKey="uv" stroke="#0294FF" fill="#7BD2FF" />
-                </AreaChart>
-            </ResponsiveContainer>
+                        <Area type="monotone" dataKey="uv" stroke="#0294FF" fill="#7BD2FF" />
+                    </AreaChart>
+                </ResponsiveContainer>
+            </div>
+
         </div>
     )
 }

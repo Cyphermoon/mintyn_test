@@ -11,7 +11,6 @@ const TableHeader = ({ text, className }: tableHeaderType) => {
     )
 }
 
-
 const PaymentTransactionSection = () => {
     return (
         <section className='space-y-6'>
