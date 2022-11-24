@@ -44,29 +44,29 @@ const data = [
 
 const DateStats = () => {
     return (
-        <div className='bg-white col-start-1 col-end-9 row-span-full p-6'>
+        <div className='bg-white col-span-full md:col-start-1 md:col-end-9 row-span-full  p-2 md:p-6'>
             <DateStateHeader />
-            <ResponsiveContainer width="100%" height="90%">
-                <AreaChart
-                    width={100}
-                    // height={200}
-                    data={data}
-                    margin={{
-                        top: 40,
-                        right: 30,
-                        left: 0,
-                        bottom: 0,
-                    }}
-                >
-                    <CartesianGrid width={300} horizontal={false} strokeDasharray="3 3" />
+            <div className='w-full h-[94%] md:h-full'>
+                <ResponsiveContainer width="100%" height="90%">
+                    <AreaChart
+                        data={data}
+                        margin={{
+                            top: 40,
+                            right: 30,
+                            left: 0,
+                            bottom: 0,
+                        }}
+                    >
+                        <CartesianGrid horizontal={false} strokeDasharray="3 3" />
 
-                    <XAxis fontSize={"11px"} color={"#000000"} fontWeight={"500"} dataKey="name" hide={false} />
-                    <YAxis fontSize={"11px"} color={"#000000"} fontWeight={"500"} hide={false} />
-                    <Tooltip />
+                        <XAxis fontSize={"11px"} color={"#000000"} fontWeight={"500"} dataKey="name" hide={false} />
+                        <YAxis fontSize={"11px"} color={"#000000"} fontWeight={"500"} hide={false} />
+                        <Tooltip />
 
-                    <Area type="monotone" dataKey="unit" stroke="#0294FF" fill="#7BD2FF" />
-                </AreaChart>
-            </ResponsiveContainer>
+                        <Area type="monotone" dataKey="unit" stroke="#0294FF" fill="#7BD2FF" />
+                    </AreaChart>
+                </ResponsiveContainer>
+            </div>
         </div>
     )
 }

@@ -6,15 +6,15 @@ import PaymentTransactionSection from './PaymentTransactionSection'
 
 const StatsSection = () => {
     return (
-        <section className='flex-grow p-9 space-y-14'>
-            <div className='flex justify-between'>
+        <section className='flex-grow p-4 md:p-9 space-y-14'>
+            <div className='md:flex space-y-2 md:space-y-0 flex-col md:flex-row justify-between'>
                 <InfoDisplay name="Daily Transaction Volume" value={"2,342"} />
                 <InfoDisplay name="Daily Transaction Value" value={"₦4,000,000"} />
                 <InfoDisplay name="Total Transaction Volume" value={"452,000"} />
                 <InfoDisplay name="Total Transaction Value" value={"₦4,000,000"} />
             </div>
 
-            <section className='grid md:grid-cols-12 md:gap-3 md:grid-rows-2'>
+            <section className='grid grid-cols-12 gap-3 grid-rows-2'>
                 <DateStats />
 
                 <InfoSummary headerText={"Orders"}>

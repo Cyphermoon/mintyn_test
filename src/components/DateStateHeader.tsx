@@ -14,8 +14,8 @@ const DateStateNavButton = ({ iconURL, altText }: dateStateButtonType) => {
 
 const DateStateHeader = () => {
     return (
-        <div className='flex justify-between items-center'>
-            <h3 className='text-title_md text-gray-600 font-semibold'>Today: 5, Aug 2018</h3>
+        <div className='flex flex-col md:flex-row justify-between items-center'>
+            <h3 className='text-title_md text-gray-600 font-semibold mb-2 md:mb-0'>Today: 5, Aug 2018</h3>
             <div className='flex items-center'>
                 <div className='border mr-8 border-slate-300 p-1 inline-flex items-center justify-between rounded-lg'>
                     <p className='text-label-md mr-4 text-gray-400'>1 Jan - 1 Jun </p>

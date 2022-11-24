@@ -11,7 +11,7 @@ export const SummaryItem = ({ text, value, color }: summaryItemType) => {
 
 const InfoSummary = ({ headerText, children }: InfoSummaryType) => {
     return (
-        <section className='space-y-3 bg-white p-3 col-start-9 col-end-13 row-span-1'>
+        <section className={`space-y-3 bg-white p-3 col-span-full md:col-start-9 md:col-end-13 row-span-1`}>
             <h4 className='text-title_md text-gray-600'>{headerText}</h4>
             <div className='h-[5px] w-full flex'>
                 <div className='w-5/6 h-full bg-secondary' />

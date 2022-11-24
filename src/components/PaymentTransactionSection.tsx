@@ -16,7 +16,7 @@ const PaymentTransactionSection = () => {
     return (
         <section className='space-y-6'>
             <h2>Payments</h2>
-            <div className='flex justify-between items-center'>
+            <div className='flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center'>
                 <p className='text-label_bg text-gray-500'>
                     <span>Showing </span>
                     <span className='text-primary inline-flex items-center'>
@@ -30,23 +30,25 @@ const PaymentTransactionSection = () => {
 
                 <PaymentSectionDropDownList />
             </div>
+            <div className='overflow-scroll h-max w-[348px] md:w-full'>
+                <table className='w-[1200px] md:w-full'>
+                    <thead >
+                        <tr className="bg-lightgray">
+                            <TableHeader text={"Item Type"} className={"pl-6"} />
+                            <TableHeader text={"Item Price"} />
+                            <TableHeader text={"Transaction No"} />
+                            <TableHeader text={"Status"} />
+                        </tr>
+                    </thead>
 
-            <table className='w-full'>
-                <thead >
-                    <tr className="bg-lightgray">
-                        <TableHeader text={"Item Type"} className={"pl-6"} />
-                        <TableHeader text={"Item Price"} />
-                        <TableHeader text={"Transaction No"} />
-                        <TableHeader text={"Status"} />
-                    </tr>
-                </thead>
+                    <tbody className='bg-white'>
+                        <TransactionList transactionDatas={datas} />
+                    </tbody>
+                </table>
+            </div>
 
-                <tbody className='bg-white'>
-                    <TransactionList transactionDatas={datas} />
-                </tbody>
-            </table>
 
-            <div className='flex justify-between'>
+            <div className='flex justify-between items-center'>
                 <p className='text-label_md text-gray-700'>Showing 1 to 10 of 500 entries</p>
                 <div>
                     <NavButton text="Previous" />
