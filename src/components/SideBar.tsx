@@ -3,7 +3,7 @@ import SideBarOptions, { SideBarOption } from './SideBarOptions'
 
 const SideBar = () => {
     return (
-        <section className='w-1/6 bg-white h-screen py-10 text-left px-8 space-y-8'>
+        <section className='w-[17%] bg-white h-screen py-10 text-left px-8 space-y-8'>
             <button className='font-sans text-white font-semibold text-title_sm uppercase bg-secondary rounded-full px-9 py-3'>Generate Invoice</button>
 
             <SideBarOptions headerText="Main">

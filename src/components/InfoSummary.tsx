@@ -3,7 +3,7 @@ import { InfoSummaryType, summaryItemType } from '../types'
 export const SummaryItem = ({ text, value, color }: summaryItemType) => {
     return (
         <div className='flex'>
-            <p className='text-[0.95rem] text-gray-700 mr-1 font-medium'>{text}:</p>
+            <p className='text-[.98rem] text-gray-700 mr-1 font-medium'>{text}:</p>
             <p className={`${color} font-semibold`}>{value}</p>
         </div>
     )

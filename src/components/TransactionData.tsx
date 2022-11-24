@@ -19,9 +19,9 @@ export const TransactionData = ({ text, field, color, className }: transactionDa
 
             }
             {field === "itemType" &&
-                <td className={` ${className && className} flex justify-between items-center w-[49%]`}>
+                <td className={` ${className && className} flex justify-between items-center w-[52%]`}>
                     <div className={`bg-gray-600 rounded-full inline-block text-white p-3`}>VW</div>
-                    <p className="text-label_big text-gray-500">{text}</p>
+                    <p className="text-label_big text-gray-800">{text}</p>
                 </td>}
         </>
 
