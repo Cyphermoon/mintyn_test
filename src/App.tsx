@@ -4,14 +4,14 @@ import StatsSection from "./components/StatsSection";
 import { useThemeContext } from "./context/ThemeProvider";
 
 function App() {
-  const { navOpened } = useThemeContext()
+  const { navOpened, profileOpened } = useThemeContext()
 
   return (
-    <div className={`w-screen ${navOpened ? "overflow-hidden h-screen" : "h-full"} md:h-full bg-background pb-10`}>
+    <div className={`w-screen  ${navOpened || profileOpened ? "overflow-hidden h-screen" : "h-full"} md:h-full bg-background pb-10`}>
       <Nav />
       <main className="flex">
         <SideBar />
-        <StatsSection />
+        {!profileOpened && <StatsSection />}
       </main>
     </div>
   );

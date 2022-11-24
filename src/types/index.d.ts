@@ -6,6 +6,11 @@ export type searchBarType = {
     navOpened?: boolean
 }
 
+export type dropDownContainerType = {
+    header: React.ReactNode,
+    body: React.ReactNode
+}
+
 export type paymentSectionOptionType = {
     value: string
 }
