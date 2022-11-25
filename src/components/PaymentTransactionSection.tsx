@@ -13,9 +13,9 @@ const TableHeader = ({ text, className }: tableHeaderType) => {
 
 const PaymentTransactionSection = () => {
     return (
-        <section className='space-y-6'>
+        <section className='space-y-7'>
             <h2>Payments</h2>
-            <div className='flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center'>
+            <div className='flex flex-col space-y-5 md:space-y-0 md:flex-row justify-between md:items-center'>
                 <p className='text-label_bg text-gray-500'>
                     <span>Showing </span>
                     <span className='text-primary inline-flex items-center'>
@@ -27,10 +27,13 @@ const PaymentTransactionSection = () => {
 
                 <SearchBar placeholder='Search payment' outline={true} />
 
-                <PaymentSectionDropDownList />
+                <div className='flex space-x-2 items-center text-gray-500'>
+                    <span className='text-title_md'>Show: </span>
+                    <PaymentSectionDropDownList />
+                </div>
             </div>
             <div className='overflow-scroll h-max w-[348px] md:w-full'>
-                <table className='w-[1200px] md:w-full'>
+                <table className='w-[1100px] md:w-full'>
                     <thead >
                         <tr className="bg-lightgray">
                             <TableHeader text={"Item Type"} className={"pl-6"} />

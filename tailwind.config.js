@@ -4,7 +4,42 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+
     extend: {
+      keyframes: {
+        moveIn: {
+          "0%": {
+            transform: "scale(0, 1)"
+          },
+
+          "100%": {
+            transform: "scale(1, 1)"
+          }
+        },
+
+        moveOut: {
+          "0%": {
+            opacity: ".86"
+          },
+          "20%": {
+            opacity: ".34",
+
+          },
+
+          "75%": {
+            transform: "scale(0, 1)"
+          },
+
+          "100%": {
+            opacity: "0",
+            display: "none"
+          }
+        }
+      },
+      animation: {
+        moveIn: "moveIn 450ms ease-in-out 1",
+        moveOut: "moveOut 450ms ease-in-out 1 forwards"
+      },
       colors: {
         primary: "#1875F0",
         secondary: "#27AE60",

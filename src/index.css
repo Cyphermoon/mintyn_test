@@ -9,6 +9,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@layer utilities{
+    .slow-transition{
+        @apply transition-all 
+    }
+}
+
 @layer base{
 
 
