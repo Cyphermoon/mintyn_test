@@ -10,7 +10,7 @@ function App() {
     <div className={`w-screen  ${navOpened || profileOpened ? "overflow-hidden h-screen" : "h-full"} md:h-full bg-background pb-10`}>
       <Nav />
       <main className="flex">
-        <SideBar />
+        {!profileOpened && <SideBar />}
         {!profileOpened && <StatsSection />}
       </main>
     </div>

@@ -6,7 +6,7 @@ const SideBar = () => {
     const { navOpened } = useThemeContext()
 
     return (
-        <section className={`origin-top-left absolute md:static w-full md:w-[18%] z-30 md:z-[revert] left-0 top-20 block ${navOpened ? "animate-moveIn" : "animate-moveOut"} md:animate-none bg-white h-screen py-10 text-left px-8 space-y-8 md:block`}>
+        <section className={`origin-top-left absolute md:static w-full md:w-[18%] z-30 md:z-[revert] left-0 top-20 block ${navOpened ? "animate-moveIn" : "hidden"} md:animate-none bg-white h-screen py-10 text-left px-8 space-y-8 md:block`}>
             <button className='font-sans scale-effect text-white font-semibold text-title_sm uppercase bg-secondary rounded-full px-9 py-3'>Generate Invoice</button>
 
             <SideBarOptions headerText="Main">
