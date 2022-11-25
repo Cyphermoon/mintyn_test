@@ -31,12 +31,12 @@ const data = [
 
 const InfoDisplay = ({ name, value }: infoDisplayType) => {
     return (
-        <div className='bg-white w-full md:w-[24%] p-5 rounded-sm flex items-center'>
+        <div className='bg-white w-full lg:w-[24%] p-5 rounded-sm flex items-center'>
             <div className='flex flex-col justify-start flex-grow'>
                 <p className='text-label_md text-gray-500'>{name}</p>
                 <h3 className='text-[1.25rem] text-gray-900'>{value}</h3>
             </div>
-            <div className='w-[41%] h-[7vh] md:h-[95%]'>
+            <div className='w-[41%] h-[7vh] lg:h-[95%]'>
                 <ResponsiveContainer className={"self-start"} width="100%" height="100%">
                     <AreaChart
                         width={100}

@@ -20,7 +20,7 @@ const Nav = () => {
             <SearchBar placeholder='Search...' />
 
             <ul className={`origin-top-left flex absolute md:static top-20 left-0 w-screen h-screen md:h-auto bg-white md:bg-transparent 
-            ${profileOpened ? "animate-moveIn" : "animate-moveOut"} md:animate-none md:flex md:flex-row flex-col justify-start md:justify-between items-center py-8 md:py-0 space-y-8 md:space-y-0 md:w-96`}>
+            ${profileOpened ? "animate-moveIn" : "animate-moveOut"} md:animate-none md:flex md:flex-row flex-col justify-start md:justify-between items-center py-8 md:py-0 space-y-8 md:space-y-0  md:w-80 lg:w-96`}>
                 <ListItem>
                     <a href='/'>Support</a>
                 </ListItem>

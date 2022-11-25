@@ -44,9 +44,9 @@ const data = [
 
 const DateStats = () => {
     return (
-        <div className='bg-white col-span-full md:col-start-1 md:col-end-9 row-span-full  p-2 md:p-6'>
+        <div className='bg-white col-span-full lg:col-start-1 lg:col-end-9 row-span-full  p-2 md:p-6'>
             <DateStateHeader />
-            <div className='w-full h-[94%] md:h-full'>
+            <div className='w-full h-[94%] lg:h-full'>
                 <ResponsiveContainer width="100%" height="90%">
                     <AreaChart
                         data={data}
