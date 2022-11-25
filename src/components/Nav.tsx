@@ -6,7 +6,7 @@ import SearchBar from './SearchBar'
 
 
 const ListItem = ({ children, className }: listItemType) => {
-    return <li className={`${className ? className : ""} text-[0.95rem] text-gray-500`}>
+    return <li className={`${className ? className : ""} scale-effect text-[0.95rem] text-gray-500`}>
         {children}
     </li>
 }
